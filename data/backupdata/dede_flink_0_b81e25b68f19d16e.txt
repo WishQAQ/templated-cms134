@@ -1,0 +1,3 @@
+INSERT INTO `dede_flink` VALUES('2','1','http://www.hbuas.edu.cn/','湖北文理学院','','','','1226375403','1','2');
+INSERT INTO `dede_flink` VALUES('9','1','#','教育学院','','','','1227772717','1','2');
+INSERT INTO `dede_flink` VALUES('8','1','#','经济与政法学院','','','','1227772703','1','2');

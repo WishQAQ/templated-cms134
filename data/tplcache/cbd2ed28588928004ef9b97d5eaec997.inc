@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]"><marquee direction="left" scrolldelay="100" onMouseOut="this.start()" onMouseOver="this.stop()"> [field:title/]  [field:pubdate function=strftime('%y-%m-%d',@me)/] </marquee></a>

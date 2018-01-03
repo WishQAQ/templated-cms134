@@ -1,0 +1,1 @@
+<li><a href="list.php?tid={dede:field name='id'/}"><img src="/static/images/tb{dede:global name=itemindex runphp="yes"}@me;{/dede:global}.png" ><p>{dede:field name='typename'/}</p></a></li>

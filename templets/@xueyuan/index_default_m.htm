@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<link type="text/css" href="/static/menu/css/style.css" rel="stylesheet">
+<link href="/static/menu/css/component.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/static/menu/js/jquery.js"></script>
+<script type="text/javascript" src="/static/menu/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="/static/menu/js/jquery.dlmenu.js"></script>
+<link href="/static/css/mobile.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/static/css/idangerous.swiper.css">
+<script src="/static/js/TouchSlide.1.1.js"></script>
+</head>
+
+<body>
+{dede:include filename='head_m.htm'/}
+
+<div id="bgline"></div>
+<div id="ny">
+    <div class="title">{dede:type}[field:typename/]{/dede:type}</div>
+    <div class="nr">
+      {dede:field.content/}
+    </div>
+  <div style="clear:both; visibility:hidden; "></div>
+</div>
+{dede:include filename='foot_m.htm'/}
+</body>
+</html>

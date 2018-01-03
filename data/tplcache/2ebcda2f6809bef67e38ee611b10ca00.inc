@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]"><img src="[field:litpic/]" width="220" height="165" /><p>[field:title/]</p></a></li>

@@ -1,0 +1,23 @@
+<div id="right">
+<div class="title">{dede:field.typename/}</div>
+<ul class="menu">
+{dede:channel type='son' row='10'}  <LI><A href="[field:typeurl/]">[field:typename/]</A> </LI> {/dede:channel} 
+    </ul>
+    
+    <div class="nr"><span class="tel"><img src="/images/index1_16.jpg" width="500" height="300" /></span></div>
+    
+    <div class="title1">活动公告</div>
+    <ul class="news">
+	
+	
+	{dede:arclist row='5' typeid='16'}
+     <li><a href="[field:arcurl/]"><span>[[field:pubdate function=MyDate('m-d',@me)/]]</span>[field:title/]</a></li>
+{/dede:arclist}
+
+
+
+
+    </ul>
+    
+    <div class="nr"><span class="tel"><img src="/images/index_75.jpg" width="340" height="100" /></span></div>
+  </div>

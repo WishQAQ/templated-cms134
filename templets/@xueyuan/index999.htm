@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/css/css.css" rel="stylesheet" type="text/css" />
+ <script type="text/javascript" src="/js/js.js"></script>
+ <script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+ </script>
+ <script language="javascript" type="text/javascript">
+if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent))
+ {
+ window.location.href="/m/";
+ }
+ </script>
+</head>
+
+<body>
+
+
+{dede:include filename='sy_head.htm'/}
+
+<div id="notices">
+  <div class="title"></div>
+  <ul>
+
+  {dede:arclist row='2' titlelen='50' typeid='16'}
+    <li><a href="[field:arcurl/]"><span>[[field:typename/]]</span> [field:title/]<i>[field:pubdate function=strftime('%y-%m-%d',@me)/]</i></a></li>
+{/dede:arclist}
+  </ul>
+</div>
+
+<div id="main">
+  <div id="pic_tjxw">
+
+
+
+
+
+    <div class="flashnews">
+      <!-- size: 280px * 192px -->
+<script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=500;
+var swf_height=300;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff|1|0x666666|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+{dede:arclist flag='f' row='5' typeid='5'}
+linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
+{/dede:arclist}
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script>
+       </div>
+
+
+
+
+
+
+
+
+  </div>
+
+  <div id="xyxw">
+    <div class="title"><img src="/images/index_22.jpg" width="265" height="41" /><a href="/xueyuanxinwen/"><img src="/images/index_25.jpg" width="55" height="19" /></a></div>
+    <ul>
+
+	{dede:arclist row='1' infolen='180' typeid='5'}
+      <li class="one">
+       <div class="pic"><img src="[field:litpic/]" width="151" height="113" /></div>
+      <div class="bt"><a href="[field:arcurl/]">[field:title/]</a></div>
+         <div class="jj">[field:pubdate function=strftime('%y-%m-%d',@me)/]</div>
+        <div class="jj">[field:info/]</div>
+     </li>
+	 {/dede:arclist}
+
+
+	 {dede:arclist row='4' titlelen='50' typeid='5'}
+      <li><a href="[field:arcurl/]">[field:title/]<p>[field:pubdate function=strftime('%y-%m-%d',@me)/]</p></a></li>
+{/dede:arclist}
+    </ul>
+  </div>
+</div>
+<div class="clear"></div>
+
+<div id="ad1"><a href="http://www.hbuas.edu.cn/jgweb/xgb/chuanye/index.php" target="_blank"><img src="/images/ad1.jpg" width="1198" height="100" /></a></div>
+
+<div id="main">
+  <div id="news">
+    <div class="title">创业动态<a href="/chuangyedongtai/"><img src="/images/index1_29.png" width="55" height="19" /></a></div>
+    <ul>
+	{dede:arclist row='1' typeid='15'}
+      <li class="one">
+       <div class="pic"><img src="[field:litpic/]" width="123" height="92" /></div>
+      <div class="bt"><a href="[field:arcurl/]">[field:title/]</a></div>
+        <div class="time">[field:pubdate function=strftime('%y-%m-%d',@me)/]</div>
+     </li>
+	 {/dede:arclist}
+
+	 {dede:arclist row='8' typeid='15' titlelen='60'}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+{/dede:arclist}
+    </ul>
+  </div>
+    <div id="news">
+    <div class="title">教学工作<a href="/jiaoxuegongzuo/"><img src="/images/index1_29.png" width="55" height="19" /></a></div>
+    <ul>
+
+
+	{dede:arclist row='1' typeid='6'}
+      <li class="one">
+       <div class="pic"><img src="[field:litpic/]" width="123" height="92" /></div>
+      <div class="bt"><a href="[field:arcurl/]">[field:title/]</a></div>
+        <div class="time">[field:pubdate function=strftime('%y-%m-%d',@me)/]</div>
+     </li>
+	 {/dede:arclist}
+
+
+	 {dede:arclist row='8' typeid='6' titlelen='60'}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+{/dede:arclist}
+
+
+
+    </ul>
+  </div>
+    <div id="news1">
+    <div class="title">通知公告<a href="/tongzhigonggao/"><img src="/images/index1_29.png" width="55" height="19" /></a></div>
+    <ul>
+
+
+	{dede:arclist row='8' typeid='16' titlelen='50'}
+      <li class="notices"><a href="[field:arcurl/]"><span>[[field:pubdate function=strftime('%y-%m-%d',@me)/]] </span> [field:title/]</a></li>
+{/dede:arclist}
+
+
+
+
+    </ul>
+  </div>
+</div>
+
+<div id="ad1"><a href="http://www.hbuas.edu.cn/jgweb/xgb/chuanye/index.php" target="_blank"><img src="/images/ad2.jpg" width="1199" height="100" /></a></div>
+<div class="clear"></div>
+<div id="main">
+  <div id="news">
+    <div class="title">创新训练<a href="/chuangxinxunlian/"><img src="/images/index1_29.png" width="55" height="19" /></a></div>
+    <ul>
+	{dede:arclist row='1' typeid='17'}
+      <li class="one">
+       <div class="pic"><img src="[field:litpic/]" width="123" height="92" /></div>
+      <div class="bt"><a href="[field:arcurl/]">[field:title/]</a></div>
+        <div class="time">[field:pubdate function=strftime('%y-%m-%d',@me)/]</div>
+     </li>
+	 {/dede:arclist}
+
+	 {dede:arclist row='8' typeid='17' titlelen='60'}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+{/dede:arclist}
+    </ul>
+  </div>
+    <div id="news">
+    <div class="title">党群工作<a href="/dangqungongzuo/"><img src="/images/index1_29.png" width="55" height="19" /></a></div>
+    <ul>
+	{dede:arclist row='1' typeid='7'}
+      <li class="one">
+       <div class="pic"><img src="[field:litpic/]" width="123" height="92" /></div>
+      <div class="bt"><a href="[field:arcurl/]">[field:title/]</a></div>
+        <div class="time">[field:pubdate function=strftime('%y-%m-%d',@me)/]</div>
+     </li>
+	 {/dede:arclist}
+
+	 {dede:arclist row='8' typeid='7' titlelen='60'}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+{/dede:arclist}
+    </ul>
+  </div>
+<div id="tab">
+  <div class="tabList">
+	<ul>
+		<li class="cur">在线报名</li>
+		<li>项目展示</li>
+		<!--<li>在线咨询</li>-->
+	</ul>
+  </div>
+  <div class="tabCon">
+	<div class="cur">
+   <form action="/plus/diy.php" enctype="multipart/form-data" method="post" onSubmit="return formCk(this);">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+      <input name='xm'  type="text" value="请填写您的姓名" />
+      <input name='xb'  type="text" value="请填写您的系别" />
+      <input name='xmm'  type="text" value="请填写您的项目名称" />
+      <input name='dh' type="text" value="请填写您的联系方式" />
+
+	<input type="hidden" name="dede_fields" value="xm,text;xb,text;xmm,text;dh,text" />
+<input type="hidden" name="dede_fieldshash" value="30ede0d9cfc0b69285a86f946d762660" />
+
+
+      <input type="submit" name="submit"  class="anniu" value="立即报名" />
+    </form>
+
+
+
+
+
+
+
+<script type='text/javascript'>
+function formCk(formct){
+	if ( formct.xm.value == '请填写您的姓名' ){
+		alert('请输入姓名？' );
+		formct.xm.focus();
+		return false;
+	}
+	if ( formct.xb.value == '请填写您的系别' ){
+		alert('请输入系别？' );
+		formct.xb.focus();
+		return false;
+	}
+
+		if ( formct.xmm.value == '请填写您的项目名称' ){
+		alert('请输入项目名称？' );
+		formct.xmm.focus();
+		return false;
+	}
+
+			if ( formct.dh.value == '请填写您的联系方式' ){
+		alert('请输入电话？' );
+		formct.dh.focus();
+		return false;
+	}
+
+
+	return true;
+}
+</script>
+
+
+
+
+
+
+
+
+    </div>
+	<div>
+     <ul class="xw">
+      {dede:arclist row='10' titlelen='60' typeid='20'}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+{/dede:arclist}
+    </ul>
+    </div>
+	<div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="clear"></div>
+
+
+<div id="people">
+   <div class="title"><img src="/images/index_63.jpg" width="332" height="67" /><a href="/chuangyerenwu/"><img src="/images/index1_29.png" width="55" height="19" /></a></div>
+   <ul>
+
+   {dede:arclist row='5' typeid='22'}
+    <li><a href="[field:arcurl/]"><img src="[field:litpic/]" width="220" height="165" /><p>[field:title/]</p></a></li>
+ {/dede:arclist}
+   </ul>
+</div>
+<div class="clear"></div>
+
+<div id="link">
+  <div class="title"><img src="/images/index_71.jpg" width="32" height="89" /></div>
+  <div class="nr1">
+    <form name="form" id="form">
+      <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+        <option>--上级主管单位--</option>
+      </select>
+      <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+        <option>--校内管理部门--</option>
+      </select>
+      <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+        <option>--教育研究机构--</option>
+      </select>
+    </form>
+  </div>
+  <div class="nr">
+{dede:flink linktype='2' row='24'}[field:link /]{/dede:flink}
+  </div>
+</div>
+
+{dede:include filename='foot.htm'/}
+
+<script language="javascript">
+
+
+
+document.write("<div id='hdhuodong2' style='width:148px;height:479px;float:left; position:fixed !important; top:140px; position:absolute;z-index:100;top:expression(offsetParent.scrollTop+150);left:10px;'><img src='http://www.feeyr.com/images/fyonline_cn.png' border='0' usemap='#Maphd2'></div>");
+
+
+
+function guanbi2(){ document.getElementById('hdhuodong2').style.display='none';}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
